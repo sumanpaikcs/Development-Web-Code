@@ -1,1 +1,1 @@
-# Suman-Paik-Frontend-Development-Journey-
+# Suman-Paik-Frontend-Development-Journey
