@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+
+        .container{
+            border: 2px solid orange;
+            display: flex;
+            height: 1000px;
+        }
+        
+        .cont1{
+            background-color: rgb(255, 191, 0);
+            width: 100px;
+            height: 100px;
+            margin: 6px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;         
+            bottom: 20px;
+
+        }
+        .cont2{
+            background-color: rgb(4, 236, 50);
+            width: 100px;
+            height: 100px;
+            margin: 6px;
+            border-radius: 80px;
+            padding: 5px;
+            align-items: center;
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+           
+            position: fixed;
+            right: 20px;
+            bottom: 0px;
+
+        }
+        .cont3{
+            background-color: rgb(247, 0, 0);
+            width: 100px;
+            height: 100px;
+            margin: 6px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 20px;
+            
+
+        }
+        .cont4{
+            background-color: rgb(221, 0, 255);
+            width: 100px;
+            height: 100px;
+            margin: 6px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            position: sticky;
+            top: 0px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cont1">relative</div>
+        <div class="cont2">fixed</div>
+        <div class="cont3">absolute</div>
+        <div class="cont4">sticky</div>
+    </div>
+</body>
+</html>

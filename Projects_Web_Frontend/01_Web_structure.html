@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sructure</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header {
+            background-color: purple;
+            color: white;
+            margin: 4px;
+            padding: 15px 10px;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left {
+            width: 1000px;
+            float: left;
+            text-align: center;
+        }
+
+        .left ul li {
+            background-color: skyblue;
+            border: .1px solid black;
+            border-radius: 4px;
+            margin: 8px;
+            padding: 5px;
+
+
+        }
+
+        .middle {
+            background-color: pink;
+            margin: 10px 4px 2px 4px;
+            border-radius: 7px;
+            border: 1px solid black;
+            padding: 20px;
+            height: 400px;
+            overflow: auto;
+            
+
+        }
+
+        .right {
+            background-color: lightgreen;
+            margin: 8px;
+            border: 1px solid black;
+            border-radius: 7px;
+            padding: 5px;
+            height: 400px;
+            overflow: auto;
+
+
+        }
+
+        .inside {
+            margin: 4px;
+            padding: 4px;
+            text-align: center;
+
+        }
+
+        .footer {
+            background-color: purple;
+            margin: 4px;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+
+        @media screen and (max-width: 700px) {
+            /* .container{
+                flex-direction: column;
+            }
+            .left{
+                max-width: 100%;
+            }
+             */
+
+             .container{
+                flex-wrap: wrap;
+             }
+
+        }
+
+        /* @media screen and (min-width: 884px ) and (max-width: 1542px ) { */
+          
+        /* .container{
+            flex-wrap: wrap;
+        } */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1> Web Structure First</h1>
+    </div>
+    <div class="container">
+
+
+        <div class="left">
+            <ul>
+                <li>This is Left</li>
+                <li>This is Left</li>
+                <li>This is Left</li>
+                <li>This is Left</li>
+                <li>This is Left</li>
+            </ul>
+
+        </div>
+        <div class="middle">
+            <h2>This is middle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint deleniti, repellat optio numquam
+                pariatur cupiditate in eius ullam, quae libero praesentium corrupti? Sequi quas porro eum hic beatae
+                voluptate praesentium aliquid tempora. Recusandae, dolorem omnis et nihil neque accusamus. Eligendi
+                architecto placeat officia dignissimos blanditiis doloribus ab voluptatibus esse!</p>
+        </div>
+
+
+        <div class="right">
+            <div class="inside">
+                <h2>This is indide 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident placeat eius soluta.</p>
+                <h2>This is indide 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident placeat eius soluta.</p>
+                <h2>This is indide 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident placeat eius soluta.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero!</p>
+    </div>
+</body>
+
+</html>
