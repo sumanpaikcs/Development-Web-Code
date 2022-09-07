@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            /* background-color: red; */
+            position: relative;
+            left: 30px;
+            padding: 20px;
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            width: 30px;
+            align-items: center;
+            
+            
+        }
+        .container a{
+            background-color: rgb(0, 52, 5);
+            padding: 20px;
+            
+            
+            
+        }
+        .container a img{
+            width: 40px;
+            filter: invert(1);
+            
+            
+        }
+        a:hover{
+            background-color: green;
+        }
+        a.active{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <a href="#" class="active"> <img src="/icon-pack/house.svg" alt="Err"> </a>
+    <a href="#"> <img src="/icon-pack/envelope-fill.svg" alt="Err"> </a>
+    <a href="#"> <img src="/icon-pack/bag.svg" alt="Err"> </a>
+    <a href="#"> <img src="/icon-pack/search.svg" alt="Err"> </a>
+    <a href="#"> <img src="/icon-pack/trash.svg" alt="Err"> </a>
+   </div>
+</body>
+</html>

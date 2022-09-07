@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 1 -->
+    <h1>Javascript innerHTML</h1>
+    <p id="first"></p>
+    
+    <!-- 2 -->
+    <p id="second">Another Paragraph</p>
+    <button onclick=changeName()> click to change</button>
+
+    <!-- 3 -->
+    <h1 id="third"></h1>
+
+    <!-- 4 -->
+    
+    <script>
+
+        //  1
+        document.getElementById("first").innerHTML="This is paragraph";
+
+        //  2
+        function changeName() {
+            document.getElementById("second").innerHTML="New Paragraph";
+        }
+
+        //  3
+        document.getElementById("third").innerHTML=3+6;
+    </script>
+    
+
+</body>
+</html>
