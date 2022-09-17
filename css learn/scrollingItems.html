@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            color:white;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: auto ;
+            scroll-snap-align: center;
+            
+        }
+        .items{
+            height: 50px;
+            width: 70px;
+            flex: none;
+            margin: 10px;
+            background-color:brown;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 1px solid green;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .items {
+            margin: 10px;
+            height: 90px;
+            width: 90px;
+            background-color: lightcoral;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            align-items: center;
+            scroll-snap-type: x mandatory;
+            scroll-snap-align: center;
+            flex: none;
+            scrollbar-width: auto ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">First</div>
+        <div class="items">Second</div>
+        <div class="items">Third</div>
+        <div class="items">Forth</div>
+        <div class="items">Fifth</div>
+        <div class="items">Seven</div>
+        <div class="items">Eight</div>
+        <div class="items">Nine</div>
+        <div class="items">Ten</div>
+    </div>
+</body>
+
+</html>

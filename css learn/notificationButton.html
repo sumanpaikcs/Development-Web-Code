@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notification{
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            padding: 15px 26px;
+            border-radius: 3px;
+        }
+        .notification:hover{
+            background-color: green;
+        }
+        .notification .badge{
+            position: absolute;
+            top: 40px;
+            left: 99px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Notification Button</h2>
+    <a href="#" class="notification">
+        <span>Message</span>
+        <span class="badge">6</span>
+    </a>
+</body>
+</html>
